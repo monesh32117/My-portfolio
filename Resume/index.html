@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>MONESH - Full Stack Developer</title>
+    <link rel="icon" href="img/WhatsApp_Image_2025-12-29_at_2.57.29_PM-removebg-preview.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <span>MONESH</span>
+            </div>
+            <div class="links">
+                <div class="link"><a href="index.html">Home</a></div>
+                <div class="link"><a href="About.html">About</a></div>
+                <div class="link"><a href="Eduction.html">Education</a></div>
+                <div class="link"><a href="Skills.html">Skills</a></div>
+                <div class="link"><a href="Internships.html">Internships</a></div>
+                <div class="link"><a href="Certifications.html">Certifications</a></div>
+                <div class="link contact-btn">
+                    <a href="tel:+918019130700">📞 Call</a> |
+                    <a href="https://wa.me/918019130700">💬 WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+    <section>
+        <div class="main-container">
+            <div class="image">
+                <img src="img/IMG_20251028_213506-Photoroom.png" alt="Profile Image">
+            </div>
+            <div class="content">
+                <h1>Hey I'm <span>MONESH</span></h1>
+                <div class="typewriter">
+                    I'm a <span>Web Developer</span>
+                </div>
+                <p>
+                    I am a passionate Full Stack Developer with a strong foundation in Java, Spring Boot, HTML, CSS, JavaScript, and React, focused on building scalable, responsive, and user-friendly web applications. I enjoy solving real-world problems, writing clean and efficient code, and continuously learning new technologies.
+                </p>
+                <div class="social-links">
+                    <a href="https://github.com/monesh32117" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/monesh.a.10004" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/monesh-a-3074a3322" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://x.com/monesh02326" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/monesh_.offcl_/" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="btn">
+                    <a href="assets/192311430-A.Monesh.pdf" download>
+                        <button>📥 Download CV</button>
+                    </a>
+                </div>
+                <div class="page-navigation">
+                    <a href="About.html" class="nav-btn next-btn">Next →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <script>
+    // Typewriter Animation
+    const typewriterElement = document.querySelector('.typewriter span');
+    const roles = [
+        'Web Developer',
+        'Full Stack Engineer',
+        'UI/UX Enthusiast',
+        'Java & Spring Boot Dev',
+        'React & JS Lover',
+        'Tech Explorer'
+    ];
+    let roleIndex = 0;
+    let charIndex = 0;
+    let typing = true;
+
+    function typeRole() {
+        if (!typewriterElement) return;
+        const currentRole = roles[roleIndex];
+        if (typing) {
+            if (charIndex < currentRole.length) {
+                typewriterElement.textContent = currentRole.slice(0, charIndex + 1);
+                charIndex++;
+                setTimeout(typeRole, 80);
+            } else {
+                typing = false;
+                setTimeout(typeRole, 1200);
+            }
+        } else {
+            if (charIndex > 0) {
+                typewriterElement.textContent = currentRole.slice(0, charIndex - 1);
+                charIndex--;
+                setTimeout(typeRole, 40);
+            } else {
+                typing = true;
+                roleIndex = (roleIndex + 1) % roles.length;
+                setTimeout(typeRole, 400);
+            }
+        }
+    }
+    window.addEventListener('DOMContentLoaded', typeRole);
+
+    // Responsive Hamburger Menu (if needed)
+    const hamburg = document.querySelector('.hamburg');
+    if (hamburg) {
+        hamburg.addEventListener('click', () => {
+            document.querySelector('.links').classList.toggle('active');
+        });
+    }
+    </script> -->
+</body>
+</html>
