@@ -1,54 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <title>Education - MONESH Portfolio</title>
-<link rel="icon" href="img/WhatsApp_Image_2025-12-29_at_2.57.29_PM-removebg-preview.png" type="image/png">
+    <link rel="icon" href="img/WhatsApp_Image_2025-12-29_at_2.57.29_PM-removebg-preview.png" type="image/png">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+    <!-- Animated Background Particles -->
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- Floating Shapes -->
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+    </div>
+
     <!-- Navigation Bar -->
-    <nav>
+    <nav class="glass-nav">
         <div class="nav-container">
             <div class="logo">
-                <span>MONESH</span>
+                <span class="glow-text">MONESH</span>
+            </div>
+            <div class="hamburg" onclick="openMenu()">
+                <i class="fa-solid fa-bars"></i>
             </div>
             <div class="links">
-                <div class="link"><a href="index.html">Home</a></div>
-                <div class="link"><a href="About.html">About</a></div>
-                <div class="link"><a href="Education.html">Education</a></div>
-                <div class="link"><a href="Skills.html">Skills</a></div>
-                <div class="link"><a href="Internships.html">Internships</a></div>
-                <div class="link"><a href="Certifications.html">Certifications</a></div>
+                <div class="link"><a href="index.html"> <i class="fa-solid fa-home"></i>Home</a></div>
+                <div class="link"><a href="About.html"> <i class="fa-solid fa-user"></i>About</a></div>
+                <div class="link"><a href="Education.html"> <i class="fa-solid fa-graduation-cap"></i>Education</a></div>
+                <div class="link"><a href="Skills.html"> <i class="fa-solid fa-code"></i>Skills</a></div>
+                <div class="link"><a href="Internships.html"> <i class="fa-solid fa-briefcase"></i>Internships</a></div>
+                <div class="link"><a href="Certifications.html"> <i class="fa-solid fa-certificate"></i>Certifications</a></div>
                 <div class="link contact-btn">
-    <a href="tel:+918019130700">📞 Call</a> |
-    <a href="https://wa.me/918019130700">💬 WhatsApp</a>
-</div>
-            <i class="fa-solid fa-bars hamburg"></i>
+                    <a href="tel:+918019130700"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://wa.me/918019130700"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
         </div>
     </nav>
+
+    <!-- Mobile Menu -->
+    <div class="dropdown" id="mobileMenu" onclick="handleMenuClick(event)">
+        <div class="menu-shape menu-shape-1"></div>
+        <div class="menu-shape menu-shape-2"></div>
+        <div class="cancel" onclick="closeMenu()">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="links">
+            <div class="link"><a href="index.html"> <i class="fa-solid fa-home"></i>Home</a></div>
+            <div class="link"><a href="About.html"> <i class="fa-solid fa-user"></i>About</a></div>
+            <div class="link"><a href="Education.html"> <i class="fa-solid fa-graduation-cap"></i>Education</a></div>
+            <div class="link"><a href="Skills.html"> <i class="fa-solid fa-code"></i>Skills</a></div>
+            <div class="link"><a href="Internships.html"> <i class="fa-solid fa-briefcase"></i>Internships</a></div>
+            <div class="link"><a href="Certifications.html"> <i class="fa-solid fa-certificate"></i>Certifications</a></div>
+        </div>
+        <div class="dropdown-footer">
+            <a href="https://github.com/monesh32117" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/monesh-a-3074a3322" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/monesh_.offcl_/" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
 
     <!-- Education Section -->
     <section class="education-section">
         <div class="education-container">
-            <div class="section-header">
+            <div class="page-header reveal">
                 <h1>My <span>Education</span></h1>
-                <div class="underline"></div>
+                <p>Academic journey and qualifications</p>
             </div>
             
             <div class="timeline">
-                <div class="timeline-item">
+                <div class="timeline-item reveal">
                     <div class="timeline-icon">
                         <i class="fa-solid fa-graduation-cap"></i>
                     </div>
                     <div class="timeline-content">
                         <h3>Bachelor of Engineering(B.E) - Computer Science</h3>
-                        <h4>Saveetha Institute of Medical and Technical Sciences (SIMATS) </h4>
+                        <h4>Saveetha Institute of Medical and Technical Sciences (SIMATS)</h4>
                         <p class="timeline-date">Sep 2023 - Jul 2027</p>
                         <p>
-                            Pursuing a Bachelor’s degree in Computer Science Engineering with a strong focus on software development, data structures, and system design. Actively involved in academic projects and technical activities while maintaining consistent performance. Gained hands-on exposure to programming concepts, problem-solving techniques, and collaborative learning environments.
+                            Pursuing a Bachelor's degree in Computer Science Engineering with a strong focus on software development, data structures, and system design. Actively involved in academic projects and technical activities while maintaining consistent performance. Gained hands-on exposure to programming concepts, problem-solving techniques, and collaborative learning environments.
                         </p>
                         <div class="achievements">
                             <span><i class="fa-solid fa-trophy"></i> CGPA: 8.5/10</span>
@@ -56,30 +106,30 @@
                     </div>
                 </div>
                 
-                <div class="timeline-item">
+                <div class="timeline-item reveal">
                     <div class="timeline-icon">
                         <i class="fa-solid fa-school"></i>
                     </div>
                     <div class="timeline-content">
                         <h3>Higher Secondary Education (12th)</h3>
-                        <h4>Board of Intermediate Education Narayana </h4>
-                        <p class="timeline-date"> Apr 2023</p>
+                        <h4>Board of Intermediate Education Narayana</h4>
+                        <p class="timeline-date">Apr 2023</p>
                         <p>
                             Completed higher secondary education with Computer Science as the primary subject. Built a solid foundation in programming fundamentals, logical reasoning, and mathematics. Demonstrated strong analytical skills through coursework and practical exercises, preparing for advanced studies in engineering and technology fields.
                         </p>
                         <div class="achievements">
                             <span><i class="fa-solid fa-star"></i> Percentage: 85%</span>                       
-                         </div>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="timeline-item">
+                <div class="timeline-item reveal">
                     <div class="timeline-icon">
                         <i class="fa-solid fa-book"></i>
                     </div>
                     <div class="timeline-content">
                         <h3>Secondary Education</h3>
-                        <h4> Secondary School Education (10th)  Narayana E.M </h4>
+                        <h4>Secondary School Education (10th) Narayana E.M</h4>
                         <p class="timeline-date">2018</p>
                         <p>
                             Successfully completed secondary school education with excellent academic performance. Developed early interest in science and technology through classroom learning and extracurricular activities. Participated in academic competitions and learning programs that strengthened problem-solving skills and logical thinking abilities.
@@ -90,8 +140,8 @@
                     </div>
                 </div>
             </div>
-            
-            <div class="additional-courses">
+
+            <div class="additional-courses reveal">
                 <h3>Additional Courses & Workshops</h3>
                 <div class="course-grid">
                     <div class="course-card">
@@ -116,12 +166,68 @@
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="page-navigation">
-            <a href="About.html" class="nav-btn prev-btn">← Previous</a>
-            <a href="Skills.html" class="nav-btn next-btn">Next →</a>
+
+            <div class="nav-buttons reveal">
+                <a href="About.html" class="nav-btn prev-btn"><i class="fa-solid fa-arrow-left"></i> Previous</a>
+                <a href="Skills.html" class="nav-btn next-btn">Next <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
         </div>
     </section>
+
+    <script>
+        // Mobile Menu Functions
+        function openMenu() {
+            document.getElementById("mobileMenu").classList.add("active");
+            document.body.classList.add("menu-open");
+        }
+
+        function closeMenu() {
+            document.getElementById("mobileMenu").classList.remove("active");
+            document.body.classList.remove("menu-open");
+        }
+
+        // Close menu when clicking outside
+        function handleMenuClick(event) {
+            const menu = document.getElementById("mobileMenu");
+            if (event.target === menu || event.target.classList.contains('menu-shape')) {
+                closeMenu();
+            }
+        }
+
+        // Close menu on Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                const menu = document.getElementById("mobileMenu");
+                if (menu.classList.contains("active")) {
+                    closeMenu();
+                }
+            }
+        });
+
+        // Scroll Animations using Intersection Observer
+        const revealElements = document.querySelectorAll('.reveal');
+        
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        // Parallax Effect for Shapes
+        document.addEventListener('mousemove', (e) => {
+            const shapes = document.querySelectorAll('.shape');
+            const x = (e.clientX / window.innerWidth - 0.5) * 20;
+            const y = (e.clientY / window.innerHeight - 0.5) * 20;
+            
+            shapes.forEach((shape, index) => {
+                const speed = (index + 1) * 0.5;
+                shape.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
+            });
+        });
+    </script>
 </body>
 </html>

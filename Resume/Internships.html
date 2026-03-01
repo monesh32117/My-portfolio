@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,94 +9,136 @@
     <link rel="icon" href="img/WhatsApp_Image_2025-12-29_at_2.57.29_PM-removebg-preview.png" type="image/png">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Navigation Bar -->
-    <nav>
+
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+    </div>
+
+    <nav class="glass-nav">
         <div class="nav-container">
             <div class="logo">
-                <span>MONESH</span>
+                <span class="glow-text">MONESH</span>
+            </div>
+            <div class="hamburg" onclick="openMenu()">
+                <i class="fa-solid fa-bars"></i>
             </div>
             <div class="links">
-                <div class="link"><a href="index.html">Home</a></div>
-                <div class="link"><a href="About.html">About</a></div>
-                <div class="link"><a href="Education.html">Education</a></div>
-                <div class="link"><a href="Skills.html">Skills</a></div>
-                <div class="link"><a href="Internships.html">Internships</a></div>
-                <div class="link"><a href="Certifications.html">Certifications</a></div>
+                <div class="link"><a href="index.html"> <i class="fa-solid fa-home"></i>Home</a></div>
+                <div class="link"><a href="About.html"> <i class="fa-solid fa-user"></i>About</a></div>
+                <div class="link"><a href="Education.html"> <i class="fa-solid fa-graduation-cap"></i>Education</a></div>
+                <div class="link"><a href="Skills.html"> <i class="fa-solid fa-code"></i>Skills</a></div>
+                <div class="link"><a href="Internships.html"> <i class="fa-solid fa-briefcase"></i>Internships</a></div>
+                <div class="link"><a href="Certifications.html"> <i class="fa-solid fa-certificate"></i>Certifications</a></div>
                 <div class="link contact-btn">
-    <a href="tel:+918019130700">📞 Call</a> |
-    <a href="https://wa.me/918019130700">💬 WhatsApp</a>
-</div>
-            <i class="fa-solid fa-bars hamburg"></i>
+                    <a href="tel:+918019130700"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://wa.me/918019130700"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
         </div>
     </nav>
 
-    <!-- Internships Section -->
+    <div class="dropdown" id="mobileMenu" onclick="handleMenuClick(event)">
+        <div class="menu-shape menu-shape-1"></div>
+        <div class="menu-shape menu-shape-2"></div>
+        <div class="cancel" onclick="closeMenu()">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="links">
+            <div class="link"><a href="index.html"> <i class="fa-solid fa-home"></i>Home</a></div>
+            <div class="link"><a href="About.html"> <i class="fa-solid fa-user"></i>About</a></div>
+            <div class="link"><a href="Education.html"> <i class="fa-solid fa-graduation-cap"></i>Education</a></div>
+            <div class="link"><a href="Skills.html"> <i class="fa-solid fa-code"></i>Skills</a></div>
+            <div class="link"><a href="Internships.html"> <i class="fa-solid fa-briefcase"></i>Internships</a></div>
+            <div class="link"><a href="Certifications.html"> <i class="fa-solid fa-certificate"></i>Certifications</a></div>
+        </div>
+        <div class="dropdown-footer">
+            <a href="https://github.com/monesh32117" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/monesh-a-3074a3322" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/monesh_.offcl_/" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+
     <section class="internships-section">
         <div class="internships-container">
-            <div class="section-header">
+            <div class="page-header reveal">
                 <h1>My <span>Internships</span></h1>
-                <div class="underline"></div>
+                <p>Professional experience and industry exposure</p>
             </div>
             
             <div class="internship-cards">
-                <div class="internship-card">
+                <div class="internship-card reveal">
                     <div class="internship-header">
                         <div class="company-logo">
-    <img src="img/hd-renault-emblem-logo-png-701751694707695cclpdd6qho.png" alt="Company Logo">
-</div>
-                        <div class="internship-info">
-                            <h3> AIML Intern</h3>
-                            <h4>Renault Group Chennai Plant </h4>
-                            <p class="internship-duration">
-                                <i class="fa-solid fa-calendar"></i>August 2025 - October 2025
-                            </p>
+                            <img src="img/hd-renault-emblem-logo-png-701751694707695cclpdd6qho.png" alt="Renault Logo">
+                        </div>
+                        <div class="internship-title">
+                            <h3>AIML Intern</h3>
+                            <h4>Renault Group Chennai Plant</h4>
                         </div>
                     </div>
+                    <span class="internship-duration">
+                        <i class="fa-solid fa-calendar"></i> August 2025 - October 2025
+                    </span>
                     <div class="internship-description">
                         <p>
-                            <strong><h3>PAINT FINAL CHECK AUTOMATION </h3></strong><br> 
-                            During my internship, I worked on multiple AI-driven industrial automation projects focused on improving quality assurance and assembly accuracy in automotive manufacturing. The projects involved designing and implementing computer vision systems to replace manual inspection processes with automated, real-time solutions. Using deep learning and image processing techniques, the systems were trained to detect defects, verify component presence, and ensure correct assembly sequences. These solutions were integrated with shop-floor automation systems to provide immediate feedback and decision-making. The projects significantly enhanced inspection accuracy, reduced human dependency, and improved production efficiency.
-                            
+                            <strong>PAINT FINAL CHECK AUTOMATION</strong><br>
+                            During my internship, I worked on multiple AI-driven industrial automation projects focused on improving quality assurance and assembly accuracy in automotive manufacturing.
                         </p>
                         <div class="internship-achievements">
                             <h4>Key Achievements:</h4>
                             <ul>
                                 <li>Developed an AI-based Paint Final Check Automation system to detect painted parts and surface defects in real time using deep learning.</li>
-                                <li>Implemented an Aruco Marker–based Bolt Sequence Monitoring System to ensure correct tightening order and prevent assembly errors.</li>
+                                <li>Implemented an Aruco Marker-based Bolt Sequence Monitoring System to ensure correct tightening order and prevent assembly errors.</li>
                                 <li>Integrated computer vision systems with PLC automation for real-time pass/fail signaling and process control.</li>
                                 <li>Achieved high detection accuracy and consistency, reducing manual inspection errors and rework.</li>
-                                <li>Created scalable and traceable inspection solutions suitable for deployment in live production environments.</li>
                             </ul>
                         </div>
                         <div class="tech-used">
                             <span>Python</span>
-                            <span>YOLOv8 </span>
+                            <span>YOLOv8</span>
                             <span>OpenCV</span>
                             <span>NVIDIA Jetson Nano</span>
                             <span>PLC Integration</span>
                         </div>
+                        <button class="view-cert-btn" onclick="openCert('img/renault.png')">View Certificate</button>
                     </div>
                 </div>
                 
-                <div class="internship-card">
+                <div class="internship-card reveal">
                     <div class="internship-header">
                         <div class="company-logo">
-    <img src="img/global-techno-solutions-ashok-nagar-chennai-project-work-for-embedded-system-ltr7igbark-250.avif" alt="Company Logo">
-</div>
-                        <div class="internship-info">
+                            <img src="img/global-techno-solutions-ashok-nagar-chennai-project-work-for-embedded-system-ltr7igbark-250.avif" alt="Global Techno Solutions Logo">
+                        </div>
+                        <div class="internship-title">
                             <h3>Java-Full Stack Development Intern</h3>
                             <h4>Global Techno Solutions</h4>
-                            <p class="internship-duration">
-                                <i class="fa-solid fa-calendar"></i> November 2025 - December 2025
-                            </p>
                         </div>
                     </div>
+                    <span class="internship-duration">
+                        <i class="fa-solid fa-calendar"></i> November 2025 - December 2025
+                    </span>
                     <div class="internship-description">
                         <p>
-                             <strong><h3>Employee Management System</h3></strong><br>
-                            Developed a full-stack web application to manage employee records including personal details, roles, departments, and salary information. Implemented secure authentication, role-based access control, and CRUD operations using RESTful APIs. Designed responsive user interfaces and ensured smooth interaction between frontend and backend layers. The system improves data accuracy, accessibility, and operational efficiency.
-
+                            <strong>Employee Management System</strong><br>
+                            Developed a full-stack web application to manage employee records including personal details, roles, departments, and salary information.
                         </p>
                         <div class="internship-achievements">
                             <h4>Key Achievements:</h4>
@@ -111,32 +154,31 @@
                             <span>HTML5</span>
                             <span>CSS3</span>
                             <span>JavaScript</span>
-                            <span> Java</span>
-                            <span> Spring Boot</span>
+                            <span>Java</span>
+                            <span>Spring Boot</span>
                             <span>MySQL</span>
-                            <span>WordPress</span>
                         </div>
+                        <button class="view-cert-btn" onclick="openCert('img/Global.jpeg')">View Certificate</button>
                     </div>
                 </div>
                 
-                <div class="internship-card">
+                <div class="internship-card reveal">
                     <div class="internship-header">
                         <div class="company-logo">
-    <img src="img/images.png" alt="Company Logo">
-</div>
-                        <div class="internship-info">
-                            <h3>Android development Intern</h3>
-                            <h4>EduSkills academy</h4>
-                            <p class="internship-duration">
-                                <i class="fa-solid fa-calendar"></i> december 2025- january 2026 
-                            </p>
+                            <img src="img/images.png" alt="EduSkills Logo">
+                        </div>
+                        <div class="internship-title">
+                            <h3>Android Development Intern</h3>
+                            <h4>EduSkills Academy</h4>
                         </div>
                     </div>
+                    <span class="internship-duration">
+                        <i class="fa-solid fa-calendar"></i> December 2025 - January 2026
+                    </span>
                     <div class="internship-description">
                         <p>
-                            <strong><h3>Task Manager Android Application</h3></strong><br>
-                            Developed an Android application to manage daily tasks efficiently with features such as task creation, updates, and completion tracking. The application follows Material Design principles to provide a clean and user-friendly interface. Implemented structured activity navigation and data handling using Android components. Focused on performance optimization and responsive UI design. The project demonstrates practical understanding of Android app development lifecycle and best practices.
-
+                            <strong>Task Manager Android Application</strong><br>
+                            Developed an Android application to manage daily tasks efficiently with features such as task creation, updates, and completion tracking.
                         </p>
                         <div class="internship-achievements">
                             <h4>Key Achievements:</h4>
@@ -145,25 +187,97 @@
                                 <li>Implemented task creation, editing, deletion, and status management features</li>
                                 <li>Applied Material UI components for consistent and modern user experience</li>
                                 <li>Gained hands-on experience with Android app lifecycle and activity management</li>
-                                <li>Improved application performance and usability through testing and optimization</li>
                             </ul>
                         </div>
                         <div class="tech-used">
                             <span>Android Studio</span>
                             <span>Java</span>
-                            <span>XML </span>
+                            <span>XML</span>
                             <span>Android SDK</span>
-                            <span>Material Design Components</span>
+                            <span>Material Design</span>
                         </div>
+                        <button class="view-cert-btn" onclick="openCert('img/EduSkills.png')">View Certificate</button>
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="page-navigation">
-            <a href="Skills.html" class="nav-btn prev-btn">← Previous</a>
-            <a href="Certifications.html" class="nav-btn next-btn">Next →</a>
+
+            <div class="nav-buttons reveal">
+                <a href="Skills.html" class="nav-btn prev-btn"><i class="fa-solid fa-arrow-left"></i> Previous</a>
+                <a href="Certifications.html" class="nav-btn next-btn">Next <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
         </div>
     </section>
+
+    <div id="certModal" class="modal" onclick="closeCert()">
+        <span class="close-modal">&times;</span>
+        <img id="modalImg" class="modal-content">
+    </div>
+
+    <script>
+        // Existing Menu Functions
+        function openMenu() {
+            document.getElementById("mobileMenu").classList.add("active");
+            document.body.classList.add("menu-open");
+        }
+
+        function closeMenu() {
+            document.getElementById("mobileMenu").classList.remove("active");
+            document.body.classList.remove("menu-open");
+        }
+
+        // Close menu when clicking outside
+        function handleMenuClick(event) {
+            const menu = document.getElementById("mobileMenu");
+            if (event.target === menu || event.target.classList.contains('menu-shape')) {
+                closeMenu();
+            }
+        }
+
+        // Close menu on Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                const menu = document.getElementById("mobileMenu");
+                if (menu.classList.contains("active")) {
+                    closeMenu();
+                }
+            }
+        });
+
+        // --- View Certificate Functions ---
+        function openCert(imgSrc) {
+            const modal = document.getElementById("certModal");
+            const modalImg = document.getElementById("modalImg");
+            modal.style.display = "flex";
+            modalImg.src = imgSrc;
+            document.body.style.overflow = "hidden"; // Prevent background scroll
+        }
+
+        function closeCert() {
+            document.getElementById("certModal").style.display = "none";
+            document.body.style.overflow = "auto";
+        }
+
+        // Existing Reveal Observer
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        // Existing Parallax Effect
+        document.addEventListener('mousemove', (e) => {
+            const shapes = document.querySelectorAll('.shape');
+            const x = (e.clientX / window.innerWidth - 0.5) * 20;
+            const y = (e.clientY / window.innerHeight - 0.5) * 20;
+            shapes.forEach((shape, index) => {
+                const speed = (index + 1) * 0.5;
+                shape.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
+            });
+        });
+    </script>
 </body>
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,151 +9,301 @@
     <link rel="icon" href="img/WhatsApp_Image_2025-12-29_at_2.57.29_PM-removebg-preview.png" type="image/png">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Navigation Bar -->
-    <nav>
+
+    <div class="particles">
+        <div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div>
+        <div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div>
+    </div>
+
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+    </div>
+
+    <nav class="glass-nav">
         <div class="nav-container">
             <div class="logo">
-                <span>MONESH</span>
+                <span class="glow-text">MONESH</span>
+            </div>
+            <div class="hamburg" onclick="openMenu()">
+                <i class="fa-solid fa-bars"></i>
             </div>
             <div class="links">
-                <div class="link"><a href="index.html">Home</a></div>
-                <div class="link"><a href="About.html">About</a></div>
-                <div class="link"><a href="Education.html">Education</a></div>
-                <div class="link"><a href="Skills.html">Skills</a></div>
-                <div class="link"><a href="Internships.html">Internships</a></div>
-                <div class="link"><a href="Certifications.html">Certifications</a></div>
+                <div class="link"><a href="index.html"> <i class="fa-solid fa-home"></i>Home</a></div>
+                <div class="link"><a href="About.html"> <i class="fa-solid fa-user"></i>About</a></div>
+                <div class="link"><a href="Education.html"> <i class="fa-solid fa-graduation-cap"></i>Education</a></div>
+                <div class="link"><a href="Skills.html"> <i class="fa-solid fa-code"></i>Skills</a></div>
+                <div class="link"><a href="Internships.html"> <i class="fa-solid fa-briefcase"></i>Internships</a></div>
+                <div class="link"><a href="Certifications.html"> <i class="fa-solid fa-certificate"></i>Certifications</a></div>
                 <div class="link contact-btn">
-    <a href="tel:+918019130700">📞 Call</a> |
-    <a href="https://wa.me/918019130700">💬 WhatsApp</a>
-</div>
-            <i class="fa-solid fa-bars hamburg"></i>
+                    <a href="tel:+918019130700"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://wa.me/918019130700"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
         </div>
     </nav>
 
-    <!-- Certifications Section -->
+    <div class="dropdown" id="mobileMenu" onclick="handleMenuClick(event)">
+        <div class="menu-shape menu-shape-1"></div>
+        <div class="menu-shape menu-shape-2"></div>
+        <div class="cancel" onclick="closeMenu()">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="links">
+            <div class="link"><a href="index.html" onclick="closeMenu()"> <i class="fa-solid fa-home"></i>Home</a></div>
+            <div class="link"><a href="About.html" onclick="closeMenu()"> <i class="fa-solid fa-user"></i>About</a></div>
+            <div class="link"><a href="Education.html" onclick="closeMenu()"> <i class="fa-solid fa-graduation-cap"></i>Education</a></div>
+            <div class="link"><a href="Skills.html" onclick="closeMenu()"> <i class="fa-solid fa-code"></i>Skills</a></div>
+            <div class="link"><a href="Internships.html" onclick="closeMenu()"> <i class="fa-solid fa-briefcase"></i>Internships</a></div>
+            <div class="link"><a href="Certifications.html" onclick="closeMenu()"> <i class="fa-solid fa-certificate"></i>Certifications</a></div>
+        </div>
+        <div class="dropdown-footer">
+            <a href="https://github.com/monesh32117" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/monesh-a-3074a3322" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/monesh_.offcl_/" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+
     <section class="certifications-section">
         <div class="certifications-container">
-            <div class="section-header">
-                <h2><i class="fa-solid fas fa-certificate"></i>Certifications & <span>Achievements</span></h2>
-                <div class="underline"></div>
+            <div class="page-header reveal">
+                <h1>Certifications & <span>Achievements</span></h1>
+                <p>Professional certifications and recognitions</p>
             </div>
             
-            <div class="certifications-grid">
-                <div class="certification-card">
-                    <div class="cert-icon">
-    <img src="img/fitaofficial_logo.jpeg" alt="cert-icon">
+            <div class="certification-grid">
+    <div class="certification-card reveal">
+        <div class="cert-icon">
+            <img src="img/fitaofficial_logo.jpeg" alt="FITA Academy Logo">
+        </div>
+        <div class="certification-content">
+            <h3>FITA Academy</h3>
+            <p class="cert-provider">Advance Java with Frameworks</p>
+            <p class="cert-date">Issued: September 2025</p>
+            <p class="cert-description">
+                Gained practical experience in Advanced Java and enterprise frameworks by building scalable backend applications.
+            </p>
+            <div class="cert-credential">
+                <span><i class="fa-solid fa-certificate"></i> Credential ID: 32995</span>
+            </div>
+            <button class="view-cert-btn" onclick="openCert('img/FITA1.png')">View Certificate 1</button> <br>
+            <button class="view-cert-btn" onclick="openCert('img/fita-certificate-image.jpg')">View Certificate 2</button>
+        </div>
+    </div>
+
+    <div class="certification-card reveal">
+        <div class="cert-icon">
+            <img src="img/iraj.jpg" alt="IRAJ Institute Logo">
+        </div>
+        <div class="certification-content">
+            <h3>IRAJ Institute of Research and Journals</h3>
+            <p class="cert-provider">International Conference</p>
+            <p class="cert-date">Issued: February 2025</p>
+            <p class="cert-description">
+                Presented and received recognition for an AI research paper at an international conference (IRAJ) on human behavior detection using CNN and SVM.
+            </p>
+            <div class="cert-credential">
+                <span><i class="fa-solid fa-certificate"></i> Paper ID: IR-AICE-COIN-200225-4558</span>
+            </div>
+            <button class="view-cert-btn" onclick="openCert('img/IRAJ.jpeg')">View Certificate</button>
+        </div>
+    </div>
+
+    <div class="certification-card reveal">
+        <div class="cert-icon">
+            <img src="img/Logo_oracle.jpg" alt="Oracle Logo">
+        </div>
+        <div class="certification-content">
+            <h3>Oracle University</h3>
+            <p class="cert-provider">Oracle Certified Professional</p>
+            <p class="cert-date">Issued: February 2025</p>
+            <div class="cert-description">
+                <strong>Certifications:</strong>
+                <ul>
+                    <li>Certified DBMS Developer by Oracle</li>
+                    <li>Oracle Certified Professional: Java SE 11 Developer</li>
+                </ul>
+                <p>Gained strong fundamentals in database design, SQL, data management, and Java SE 11 programming.</p>
+            </div>
+            <button class="view-cert-btn" onclick="openCert('img/SQL.png')">View Certificate DBMS</button> <br>
+
+            <button class="view-cert-btn" onclick="openCert('img/Java.png')">View Certificate JAVA</button>
+        </div>
+    </div>
 </div>
-                    
-                    <h3>FITA ACADEMY</h3>
-                    <p class="cert-provider">Advance Java with Frameworks</p>
-                    <p class="cert-date">Issued: September 2025</p>
-                    <p class="cert-description">
-                        Gained practical experience in Advanced Java and enterprise frameworks by building scalable backend applications, RESTful services, and secure, database-driven architectures using industry best practices.
-                    </p>
-                    <div class="cert-credential">
-                        <span><i class="fa-solid fa-certificate"></i> Credential ID: 32995</span>
-                    </div>
-                </div>
-                
-                <div class="certification-card">
-                    <div class="cert-icon1">
-                        <img src="img/iraj.jpg" alt="cert-icon">
-                    </div>
-                    <h3>IRAJ Institute of Research and Journals</h3>
-                    <p class="cert-provider"></p> International conference 
-                    <p class="cert-date">Issued: February 2025</p>
-                    <p class="cert-description">
-                        presented and received recognition for an AI research paper at an international conference (IRAJ) on human behavior detection using CNN and SVM.
-                    </p>
-                    <div class="cert-credential">
-                        <span><i class="fa-solid fa-certificate"></i> Paper ID: IR-AICE-COIN-200225-4558</span>
-                    </div>
-                </div>
-                
-                <div class="certification-card">
-                    <div class="cert-icon2">
-                        <img src="img/Logo_oracle.jpg" alt="cert-icon">
-                    </div>
-                    <h3>Oracle University </h3>
-                    <p class="cert-provider">Oracle</p>
-                    <p class="cert-date">Issued:  February 2025</p>
-                    <p class="cert-description">
-                        <strong><h5>1.Certified DBMS developer by Oracle <br>2.Oracle Certified Professional: Java SE 11 Developer</h5></strong>
-                        Gained strong fundamentals in database design, SQL, data management, and Java SE 11 programming following industry standards and best practices.
-                    </p>
-                </div>
-                
-                <!-- <div class="certification-card">
-                    <div class="cert-icon">
-                        <i class="fa-brands fa-meta"></i>
-                    </div>
-                    <h3>Meta Frontend Developer</h3>
-                    <p class="cert-provider">Meta</p>
-                    <p class="cert-date">Issued: September 2023</p>
-                    <p class="cert-description">
-                        Advanced skills in HTML, CSS, JavaScript, and React for building responsive web applications.
-                    </p>
-                    <div class="cert-credential">
-                        <span><i class="fa-solid fa-certificate"></i> Credential ID: MFD-2023</span>
-                    </div>
-                </div> -->
+
+            <div class="nav-buttons reveal">
+                <a href="Internships.html" class="nav-btn prev-btn"><i class="fa-solid fa-arrow-left"></i> Previous</a>
+                <a href="index.html" class="nav-btn next-btn">Home <i class="fa-solid fa-home"></i></a>
             </div>
-            
-            <!-- <div class="achievements-section">
-                <h2><i class="fa-solid fa-trophy"></i> Academic Achievements</h2>
-                <div class="achievements-list">
-                    <div class="achievement-item">
-                        <div class="achievement-icon">
-                            <i class="fa-solid fa-medal"></i>
-                        </div>
-                        <div class="achievement-content">
-                            <h3>Dean's List</h3>
-                            <p>Consistently maintained academic excellence throughout engineering program</p>
-                            <span class="achievement-year">2020 - 2024</span>
-                        </div>
-                    </div>
-                    
-                    <div class="achievement-item">
-                        <div class="achievement-icon">
-                            <i class="fa-solid fa-code"></i>
-                        </div>
-                        <div class="achievement-content">
-                            <h3>Hackathon Winner</h3>
-                            <p>First place in National Level Hackathon for developing innovative solution</p>
-                            <span class="achievement-year">2023</span>
-                        </div>
-                    </div>
-                    
-                    <div class="achievement-item">
-                        <div class="achievement-icon">
-                            <i class="fa-solid fa-project-diagram"></i>
-                        </div>
-                        <div class="achievement-content">
-                            <h3>Best Project Award</h3>
-                            <p>Recognized for outstanding final year project on Web Application Development</p>
-                            <span class="achievement-year">2024</span>
-                        </div>
-                    </div>
-                    
-                    <div class="achievement-item">
-                        <div class="achievement-icon">
-                            <i class="fa-solid fa-users"></i>
-                        </div>
-                        <div class="achievement-content">
-                            <h3>Technical Club President</h3>
-                            <p>Led the college technical club and organized multiple coding competitions</p>
-                            <span class="achievement-year">2023</span>
-                        </div>
+
+            <div class="contact-section reveal">
+                <div class="contact-box">
+                    <div class="contact-container">
+                        <h2>Get In <span>Touch</span></h2>
+                        <p>Feel free to reach out for any inquiries or collaborations</p>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name"><i class="fa-solid fa-user"></i> Name</label>
+                                    <input type="text" id="name" placeholder="Your Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email"><i class="fa-solid fa-envelope"></i> Email</label>
+                                    <input type="email" id="email" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone"><i class="fa-solid fa-phone"></i> Phone Number</label>
+                                    <input type="tel" id="phone" placeholder="Your Phone Number">
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject"><i class="fa-solid fa-tag"></i> Subject</label>
+                                    <input type="text" id="subject" placeholder="Subject" required>
+                                </div>
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="message"><i class="fa-solid fa-message"></i> Message</label>
+                                <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn" id="submitBtn"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+                        </form>
                     </div>
                 </div>
             </div>
-        </div> -->
-        
-        <div class="page-navigation">
-            <a href="Internships.html" class="nav-btn prev-btn">← Previous</a>
-            <a href="index.html" class="nav-btn next-btn">Home</a>
         </div>
     </section>
+
+    <div id="certModal" class="modal" onclick="closeCert()">
+        <span class="close-btn">&times;</span>
+        <img id="certImage" class="modal-img">
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+
+    <script>
+        // --- FIREBASE CONFIGURATION ---
+        const firebaseConfig = {
+            apiKey: "AIzaSyCerxQbApsOqRcXchkdamsHFd3Gn_SfCnA",
+            authDomain: "my-portfolio-38157.firebaseapp.com",
+            databaseURL: "https://my-portfolio-38157-default-rtdb.firebaseio.com",
+            projectId: "my-portfolio-38157",
+            storageBucket: "my-portfolio-38157.firebasestorage.app",
+            messagingSenderId: "485982450262",
+            appId: "1:485982450262:web:00ffdb2245113b954941f7"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+
+        // --- CONTACT FORM LOGIC ---
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const btn = document.getElementById('submitBtn');
+            const originalBtnText = btn.innerHTML;
+            btn.innerHTML = "<i class='fa-solid fa-spinner fa-spin'></i> Sending...";
+            btn.disabled = true;
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+
+            // Add data to Firestore
+            db.collection('messages').add({
+                name: name,
+                email: email,
+                phone: phone,
+                subject: subject,
+                message: message,
+                timestamp: firebase.firestore.FieldValue.serverTimestamp()
+            })
+            .then((docRef) => {
+                console.log('Document written with ID: ', docRef.id);
+                alert('Success! Your message has been sent to Monesh.');
+                contactForm.reset();
+            })
+            .catch((error) => {
+                console.error('Firebase Error:', error);
+                alert('Oops! Error: ' + error.message);
+            })
+            .finally(() => {
+                btn.innerHTML = originalBtnText;
+                btn.disabled = false;
+            });
+        });
+
+        // --- UI FUNCTIONS ---
+        function openMenu() {
+            document.getElementById("mobileMenu").classList.add("active");
+            document.body.classList.add("menu-open");
+        }
+
+        function closeMenu() {
+            document.getElementById("mobileMenu").classList.remove("active");
+            document.body.classList.remove("menu-open");
+        }
+
+        // Close menu when clicking outside
+        function handleMenuClick(event) {
+            const menu = document.getElementById("mobileMenu");
+            if (event.target === menu || event.target.classList.contains('menu-shape')) {
+                closeMenu();
+            }
+        }
+
+        // Close menu on Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                const menu = document.getElementById("mobileMenu");
+                if (menu.classList.contains("active")) {
+                    closeMenu();
+                }
+            }
+        });
+
+        function openCert(imgSrc) {
+            const modal = document.getElementById("certModal");
+            const modalImg = document.getElementById("certImage");
+            modal.style.display = "flex";
+            modalImg.src = imgSrc;
+        }
+
+        function closeCert() {
+            document.getElementById("certModal").style.display = "none";
+        }
+
+        // Scroll Reveal Animation
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+        // Parallax Shapes
+        document.addEventListener('mousemove', (e) => {
+            const shapes = document.querySelectorAll('.shape');
+            const x = (e.clientX / window.innerWidth - 0.5) * 20;
+            const y = (e.clientY / window.innerHeight - 0.5) * 20;
+            shapes.forEach((shape, index) => {
+                const speed = (index + 1) * 0.5;
+                shape.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
+            });
+        });
+    </script>
 </body>
 </html>

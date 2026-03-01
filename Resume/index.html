@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,112 +8,342 @@
     <title>MONESH - Full Stack Developer</title>
     <link rel="icon" href="img/WhatsApp_Image_2025-12-29_at_2.57.29_PM-removebg-preview.png" type="image/png">
     <link rel="stylesheet" href="style.css">
-    
 </head>
+
 <body>
 
+    <!-- Animated Background Particles -->
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- Floating Shapes -->
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+    </div>
+
     <!-- Navigation Bar -->
-    <nav>
+    <nav class="glass-nav">
         <div class="nav-container">
             <div class="logo">
-                <span>MONESH</span>
+                <span class="glow-text">MONESH</span>
+            </div>
+            <div class="hamburg" onclick="openMenu()">
+                <i class="fa-solid fa-bars"></i>
             </div>
             <div class="links">
-                <div class="link"><a href="index.html">Home</a></div>
-                <div class="link"><a href="About.html">About</a></div>
-                <div class="link"><a href="Education.html">Education</a></div>
-                <div class="link"><a href="Skills.html">Skills</a></div>
-                <div class="link"><a href="Internships.html">Internships</a></div>
-                <div class="link"><a href="Certifications.html">Certifications</a></div>
+                <div class="link"><a href="index.html"> <i class="fa-solid fa-home"></i>Home</a></div>
+                <div class="link"><a href="About.html"> <i class="fa-solid fa-user"></i>About</a></div>
+                <div class="link"><a href="Education.html"> <i class="fa-solid fa-graduation-cap"></i>Education</a></div>
+                <div class="link"><a href="Skills.html"> <i class="fa-solid fa-code"></i>Skills</a></div>
+                <div class="link"><a href="Internships.html"> <i class="fa-solid fa-briefcase"></i>Internships</a></div>
+                <div class="link"><a href="Certifications.html"> <i class="fa-solid fa-certificate"></i>Certifications</a></div>
                 <div class="link contact-btn">
-                    <a href="tel:+918019130700">📞 Call</a> |
-                    <a href="https://wa.me/918019130700">💬 WhatsApp</a>
+                    <a href="tel:+918019130700"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://wa.me/918019130700"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
             </div>
         </div>
     </nav>
 
+    <!-- Mobile Menu -->
+    <div class="dropdown" id="mobileMenu" onclick="handleMenuClick(event)">
+        <div class="menu-shape menu-shape-1"></div>
+        <div class="menu-shape menu-shape-2"></div>
+        <div class="cancel" onclick="closeMenu()">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="links">
+            <div class="link"><a href="index.html"> <i class="fa-solid fa-home"></i>Home</a></div>
+            <div class="link"><a href="About.html"> <i class="fa-solid fa-user"></i>About</a></div>
+            <div class="link"><a href="Education.html"> <i class="fa-solid fa-graduation-cap"></i>Education</a></div>
+            <div class="link"><a href="Skills.html"> <i class="fa-solid fa-code"></i>Skills</a></div>
+            <div class="link"><a href="Internships.html"> <i class="fa-solid fa-briefcase"></i>Internships</a></div>
+            <div class="link"><a href="Certifications.html"> <i class="fa-solid fa-certificate"></i>Certifications</a></div>
+        </div>
+        <div class="dropdown-footer">
+            <a href="https://github.com/monesh32117" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/monesh-a-3074a3322" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/monesh_.offcl_/" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+
     <!-- Main Section -->
-    <section>
+    <section class="hero-section">
         <div class="main-container">
-            <div class="image">
-                <img src="img/IMG_20251028_213506-Photoroom.png" alt="Profile Image">
+            <div class="image-container tilt-container">
+                <div class="image-frame">
+                    <img src="img/IMG_20251028_213506-Photoroom.png" alt="Profile Image" class="profile-img">
+                </div>
+                <div class="image-glow"></div>
             </div>
-            <div class="content">
-                <h1>Hey I'm <span>MONESH</span></h1>
+
+            <div class="content reveal">
+                <div class="greeting">
+                    <span class="wave">👋</span>
+                    <span>Hey, I'm</span>
+                </div>
+                <h1 class="gradient-text">MONESH</h1>
                 <div class="typewriter">
-                    I'm a <span>Web Developer</span>
+                    <span class="typing-text"></span>
+                    <span class="cursor">|</span>
                 </div>
-                <p>
-                    I am a passionate Full Stack Developer with a strong foundation in Java, Spring Boot, HTML, CSS, JavaScript, and React, focused on building scalable, responsive, and user-friendly web applications. I enjoy solving real-world problems, writing clean and efficient code, and continuously learning new technologies.
+                <p class="bio-text">
+                    A passionate <span class="highlight">Full Stack Developer</span> crafting scalable, 
+                    responsive, and user-friendly web applications with Java, Spring Boot, React, 
+                    and modern technologies.
                 </p>
+
                 <div class="social-links">
-                    <a href="https://github.com/monesh32117" title="GitHub"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.facebook.com/monesh.a.10004" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.linkedin.com/in/monesh-a-3074a3322" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://x.com/monesh02326" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="https://www.instagram.com/monesh_.offcl_/" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-                <div class="btn">
-                    <a href="assets/192311430-A.Monesh.pdf" download>
-                        <button>📥 Download CV</button>
+                    <a href="https://github.com/monesh32117" class="social-btn github" title="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.facebook.com/monesh.a.10004" class="social-btn facebook" title="Facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/monesh-a-3074a3322" class="social-btn linkedin" title="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://x.com/monesh02326" class="social-btn twitter" title="Twitter">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/monesh_.offcl_/" class="social-btn instagram" title="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
                     </a>
                 </div>
-                <div class="page-navigation">
-                    <a href="About.html" class="nav-btn next-btn">Next →</a>
+
+                <div class="cta-buttons">
+                    <a href="assets/192311430-A.Monesh.pdf" download class="btn primary-btn">
+                        <i class="fa-solid fa-download"></i>
+                        Download CV
+                    </a>
+                    <a href="About.html" class="btn secondary-btn">
+                        Explore More
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
                 </div>
+
+                <!-- <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="50">0</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="100">0</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="5">0</span>
+                        <span class="stat-label">Awards</span>
+                    </div>
+                </div> -->
             </div>
         </div>
+
+        <!-- Scroll Indicator -->
+        <!-- <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div> -->
     </section>
 
-    <!-- <script>
-    // Typewriter Animation
-    const typewriterElement = document.querySelector('.typewriter span');
-    const roles = [
-        'Web Developer',
-        'Full Stack Engineer',
-        'UI/UX Enthusiast',
-        'Java & Spring Boot Dev',
-        'React & JS Lover',
-        'Tech Explorer'
-    ];
-    let roleIndex = 0;
-    let charIndex = 0;
-    let typing = true;
+    <script>
+        // Mobile Menu Functions
+        // Mobile Menu Functions
+function openMenu() {
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.add("active");
+    document.body.style.overflow = "hidden"; // Prevent background scroll
+}
 
-    function typeRole() {
-        if (!typewriterElement) return;
-        const currentRole = roles[roleIndex];
-        if (typing) {
-            if (charIndex < currentRole.length) {
-                typewriterElement.textContent = currentRole.slice(0, charIndex + 1);
-                charIndex++;
-                setTimeout(typeRole, 80);
-            } else {
-                typing = false;
-                setTimeout(typeRole, 1200);
-            }
-        } else {
-            if (charIndex > 0) {
-                typewriterElement.textContent = currentRole.slice(0, charIndex - 1);
-                charIndex--;
-                setTimeout(typeRole, 40);
-            } else {
-                typing = true;
-                roleIndex = (roleIndex + 1) % roles.length;
-                setTimeout(typeRole, 400);
-            }
+function closeMenu() {
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.remove("active");
+    document.body.style.overflow = "auto"; // Re-enable scroll
+}
+
+// Close menu when clicking outside (on the dropdown background)
+function handleMenuClick(event) {
+    const menu = document.getElementById("mobileMenu");
+    const linksContainer = menu.querySelector('.links');
+    const footer = menu.querySelector('.dropdown-footer');
+    
+    // If clicked on the dropdown background (not on links or footer), close the menu
+    if (event.target === menu || event.target.classList.contains('menu-shape')) {
+        closeMenu();
+    }
+}
+
+// Close menu when pressing Escape key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        const menu = document.getElementById("mobileMenu");
+        if (menu.classList.contains("active")) {
+            closeMenu();
         }
     }
-    window.addEventListener('DOMContentLoaded', typeRole);
+});
 
-    // Responsive Hamburger Menu (if needed)
-    const hamburg = document.querySelector('.hamburg');
-    if (hamburg) {
-        hamburg.addEventListener('click', () => {
-            document.querySelector('.links').classList.toggle('active');
+// Close menu automatically when a link is clicked
+document.querySelectorAll('.dropdown .link a').forEach(link => {
+    link.addEventListener('click', closeMenu);
+});
+
+// Re-initialize Typewriter (Keep your existing code, just ensure it's inside DOMContentLoaded)
+window.addEventListener('DOMContentLoaded', () => {
+    typeRole();
+    
+    // Check if image exists to prevent console errors
+    const img = document.querySelector('.profile-img');
+    img.onerror = function() {
+        console.error("Image failed to load. Check your file path: img/IMG_20251028_213506-Photoroom.png");
+    };
+});
+// Close menu when clicking a link
+document.querySelectorAll('.dropdown .link a').forEach(link => {
+    link.addEventListener('click', closeMenu);
+});
+
+        // Enhanced Typewriter Animation
+        const typewriterElement = document.querySelector('.typing-text');
+        const roles = [
+            'Full Stack Developer',
+            'Java Developer',
+            'React Developer',
+            'Web Enthusiast',
+            'Tech Lover',
+            'Problem Solver'
+        ];
+        let roleIndex = 0;
+        let charIndex = 0;
+        let typing = true;
+        let isDeleting = false;
+
+        function typeRole() {
+            if (!typewriterElement) return;
+            const currentRole = roles[roleIndex];
+            
+            if (isDeleting) {
+                typewriterElement.textContent = currentRole.slice(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typewriterElement.textContent = currentRole.slice(0, charIndex + 1);
+                charIndex++;
+            }
+
+            if (!isDeleting && charIndex === currentRole.length) {
+                isDeleting = true;
+                setTimeout(typeRole, 2000);
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                roleIndex = (roleIndex + 1) % roles.length;
+                setTimeout(typeRole, 500);
+            } else {
+                setTimeout(typeRole, isDeleting ? 30 : 60);
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', typeRole);
+
+        // 3D Tilt Effect for Profile Image
+        const tiltContainer = document.querySelector('.tilt-container');
+        if (tiltContainer) {
+            tiltContainer.addEventListener('mousemove', (e) => {
+                const rect = tiltContainer.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                const rotateX = (y - centerY) / 20;
+                const rotateY = (centerX - x) / 20;
+                
+                tiltContainer.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+            });
+
+            tiltContainer.addEventListener('mouseleave', () => {
+                tiltContainer.style.transform = 'perspective(1000px) rotateX(0) rotateY(0)';
+            });
+        }
+
+        // Scroll Animations using Intersection Observer
+        const revealElements = document.querySelectorAll('.reveal');
+        
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        // Animated Counter
+        const statNumbers = document.querySelectorAll('.stat-number');
+        let countersStarted = false;
+
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !countersStarted) {
+                    countersStarted = true;
+                    statNumbers.forEach(counter => {
+                        const target = parseInt(counter.getAttribute('data-target'));
+                        const increment = target / 50;
+                        let current = 0;
+                        
+                        const updateCounter = () => {
+                            if (current < target) {
+                                current += increment;
+                                counter.textContent = Math.ceil(current);
+                                setTimeout(updateCounter, 30);
+                            } else {
+                                counter.textContent = target;
+                            }
+                        };
+                        updateCounter();
+                    });
+                }
+            });
+        }, { threshold: 0.5 });
+
+        statNumbers.forEach(counter => counterObserver.observe(counter));
+
+        // Smooth Scroll for Navigation Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
         });
-    }
-    </script> -->
+
+        // Parallax Effect for Shapes
+        document.addEventListener('mousemove', (e) => {
+            const shapes = document.querySelectorAll('.shape');
+            const x = (e.clientX / window.innerWidth - 0.5) * 20;
+            const y = (e.clientY / window.innerHeight - 0.5) * 20;
+            
+            shapes.forEach((shape, index) => {
+                const speed = (index + 1) * 0.5;
+                shape.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
+            });
+        });
+    </script>
 </body>
 </html>
